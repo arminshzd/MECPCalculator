@@ -13,10 +13,10 @@ class MECPCalculator(Calculator):
             logfilename: str='MECP.log', 
             **kwargs):
         super().__init__(**kwargs)
-        self.calc_1 = sys_1.get['calc', None]
+        self.calc_1 = sys_1.get('calc', None)
         self.spin_1 = sys_1.get('spin', 1)
         self.charge_1 = sys_1.get('charge', 0)
-        self.calc_2 = sys_2.get['calc', None]
+        self.calc_2 = sys_2.get('calc', None)
         self.spin_2 = sys_2.get('spin', 1)
         self.charge_2 = sys_2.get('charge', 0)
         self.penalty_weight = penalty_weight
