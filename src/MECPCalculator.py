@@ -50,7 +50,7 @@ class MECPCalculator(Calculator):
         penalty = 0.5 * self.penalty_weight * delta**2
 
         # Forces for the penalty term (chain rule)
-        f_penalty = self.penalty_weight * delta * 0.5 * (f1 - f2)
+        f_penalty = self.penalty_weight * delta * (f1 - f2)
 
         # Effective forces
         f_avg = 0.5 * (f1 + f2)
